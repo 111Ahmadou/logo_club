@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo du Club Scientifique UCAD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1B2A; /* Couleur de fond de la première proposition */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Empêche les barres de défilement si le contenu dépasse */
+        }
+        .logo-container-emoji {
+            position: relative;
+            width: 256px; /* Taille fixe pour le conteneur du logo en emojis */
+            height: 256px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Pour la forme circulaire extérieure */
+            background-color: rgba(65, 234, 212, 0.1); /* Bordure extérieure subtile */
+            box-shadow: 0 0 25px rgba(65, 234, 212, 0.4); /* Ombre lumineuse */
+        }
+        .logo-container-emoji::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background-color: #2C9B90; /* Couleur de fond interne du cercle */
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); /* Ombre interne */
+        }
+        .logo-element {
+            position: absolute;
+            font-size: 5rem; /* Taille du cerveau principal */
+            line-height: 1;
+            z-index: 10;
+        }
+        .star-element {
+            font-size: 3.5rem; /* Taille des étoiles */
+            position: absolute;
+            top: 25px; /* Positionnement relatif au conteneur */
+            right: 40px;
+            transform: rotate(12deg);
+            z-index: 10;
+            color: #FFD700; /* Couleur or pour les étoiles */
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+        }
+        .gear-element {
+            font-size: 3rem; /* Taille de l'engrenage */
+            position: absolute;
+            bottom: 40px; /* Positionnement relatif au conteneur */
+            left: 40px;
+            z-index: 10;
+            color: #A0AEC0; /* Couleur gris clair pour l'engrenage */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container-emoji">
+        <span class="logo-element">🧠</span>
+        <span class="star-element">✨</span>
+        <span class="gear-element">⚙️</span>
+    </div>
+</body>
+</html>
